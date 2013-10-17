@@ -10,7 +10,7 @@ def welcome():
 def display():
     if request.method == 'POST':
         x = ""
-        x += "link : " + request.form['link'] + " "     
+        x += "link : " + request.form['link'] + " "
         x += "start : " + request.form['start'] + " "
         x += "end : " + request.form['end']
         return x
