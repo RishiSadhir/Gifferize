@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="utf-8">    
+    <meta charset="utf-8">
     <title>Gifferize!</title>
-    <link rel="stylesheet" href="static/mainStyle.css">    
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
   </head>
+
   <body>
 
-    <header>
-      <span class="logo">Gifferize!</span><span class"catchphrase"> Let me turn that youtube link into a gif for you!</span>
-    </header>
 
-    <div class="mainframe">
-      <form name="mainForm" method="Post" action="/display">
-        <table width="" cellspacing="" cellpadding="" border="0">
-          <tr>
-            <td>YouTube Link: </td>
-            <td><input type="text" name="link" value="" /></td>
-          </tr>
-          <tr>
-            <td>Start Time: </td>
-            <td><input type="text" name="start" value="" /> </td>
-          </tr>
-          <tr>
-            <td>End Time: </td>
-            <td><input type="text" name="end" value="" />  </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="submit" name="submit" value="Submit" />
-            </td>
-          </tr>
-        </table>
-      </form>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+          <a href = "#" class = "brand">Gifferize!</a>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li> <a href="#">Home</a> </li>
+              <li class="dropdown"></li>
+              <li> <a href="#">Packages</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <br />
+    <!--
 
-    <footer class="foot">
-      <a href="http://www.github.com/RishiSadhir/Gifferize">About</a>
+
+    <div class="hero-unit">
+    <div class="container">
+    <h2>Let me turn that youtube video in to a Gif for you!</h2>
+    <p>Just give me the video link, start time, and end time, and I'll do the rest!</p>
+    </div>
+    </div>
+
+    - -->
+
+    <div class="hero-unit">
+      <div class="container">
+        <form name="mainForm" method="Post" action="/display">
+          <table width="" cellspacing="" cellpadding="" border="0">
+            <tr>
+              <td>YouTube Link: </td>
+              <td><input type="text" name="link" value="" /></td>
+            </tr>
+            <tr>
+              <td>Start Time: </td>
+              <td><input type="text" name="start" value="" /> </td>
+            </tr>
+            <tr>
+              <td>End Time: </td>
+              <td><input type="text" name="end" value="" />  </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="submit" value="Submit" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
     </footer>
 
   </body>
