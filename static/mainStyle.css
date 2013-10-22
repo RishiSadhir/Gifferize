@@ -8,3 +8,15 @@
     /* padding: 20px; */
     /* width: 400px; */
 }
+
+header {
+    position: absolute;
+    top: 10px;
+    text-align:center
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align:center
+}
