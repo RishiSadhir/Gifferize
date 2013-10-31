@@ -1,0 +1,8 @@
+body { padding-top: 100px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+
+input {
+    max-width: 625px;
+}
