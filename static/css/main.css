@@ -1,8 +1,25 @@
-body { padding-top: 100px; }
+body {
+  background: #FCFCFC;
+}
+
+.container-custom {
+  padding-top:100px;
+  font: normal 11pt/13pt Arial, sans-serif;
+}
+
 @media screen and (max-width: 768px) {
-    body { padding-top: 0px; }
+  body { padding-top: 0px; }
 }
 
 input {
-    max-width: 625px;
+  max-width: 625px;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.navbar-custom {
+  background-color:#F4F4F4;
 }
