@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, Markup
 from base64 import b64encode
 import requests
 import string
@@ -56,7 +56,7 @@ def display():
 
 def youtube_to_gif(link, start, end):
     start, end, diffs = gather_times(start.strip(), end.strip())
-    return "link: "+link+"\nstarts: " + start +"\nends: " + end
+    return render_template("comming_soon.html", link=link, start=start, end=end)
 
 def verify_times(start, end):
     starts = [int(x.strip()) for x in start.split(":")[::-1]]
